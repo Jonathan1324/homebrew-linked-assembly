@@ -21,7 +21,8 @@ class LinkedAssembly < Formula
                   "x86_64"
                 end
 
-    system "python3", "scripts/install_build_deps.py"
+    system "cargo", "install", "cargo-download"
+    system "cargo", "install", "cargo-license"
 
     system "python3", "-m", "ci.ci",
                       "--no-test",
