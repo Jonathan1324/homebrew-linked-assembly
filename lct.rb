@@ -15,7 +15,8 @@ class Lct < Formula
   def install
     system "cargo", "install", "cargo-license"
 
-    system "python3", "-m", "ci.ci", "--no-test"
+    python = Formula["python@3.12"].opt_bin/"python3"
+    system python, "-m", "ci.ci", "--no-test"
 
     libexec.install Dir["dist/*"]
 
@@ -23,7 +24,7 @@ class Lct < Formula
   end
 
   test do
-    Dir["#{prefix}/bin/*"].each do |exe|
+    Dir["#{bin}/*"].each do |exe|
       system exe, "--version"
     end
   end
