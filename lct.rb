@@ -4,7 +4,7 @@ class Lct < Formula
   license "BSD-3-Clause"
   version "0.1.0-alpha.5"
 
-  url "https://github.com/Jonathan1324/lct/archive/heads/main.tar.gz"
+  url "https://github.com/Jonathan1324/lct/archive/refs/heads/main.tar.gz"
   sha256 "fa4114c6035ea616ebe337060a7f0af3c4d8403321a0f4576276b87fed5541a2"
 
   depends_on "gcc" => :build
