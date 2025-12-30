@@ -2,23 +2,23 @@ class Lct < Formula
   desc "LCT is a toolset."
   homepage "https://github.com/Jonathan1324/lct"
   license "BSD-3-Clause"
-  version "0.1.0-alpha.5"
+  version "v0.1.0-alpha.5"
 
   if OS.mac?
     if Hardware::CPU.arm?
-      url "https://github.com/Jonathan1324/lct/releases/download/v#{version}/lct-macos-arm64.tar.gz"
-      sha256 "5989998488f51f4382465ab60d4f0aa6d67586c6233d2d93da003e09495c57cd" # TODO: Update Checksum
+      url "https://github.com/Jonathan1324/lct/releases/download/#{version}/lct-macos-arm64.tar.gz"
+      sha256 "57a3513abb18f8326757bc9173f111dc88ad050b2aa177ed922a6075649438de"
     else
-      url "https://github.com/Jonathan1324/lct/releases/download/v#{version}/lct-macos-x86_64.tar.gz"
-      sha256 "6ba08ddc402340ba912f2807f87a9b1a45bcb2d2df8b212f0a50e482438801d4" # TODO: Update Checksum
+      url "https://github.com/Jonathan1324/lct/releases/download/#{version}/lct-macos-x86_64.tar.gz"
+      sha256 "82484c8f27d1600ba2bf837bd827f3ae3411e85fb4de1897e1421b1b9cf5f340"
     end
   elsif OS.linux?
     if Hardware::CPU.arm?
-      url "https://github.com/Jonathan1324/lct/releases/download/v#{version}/lct-linux-arm64.tar.gz"
-      sha256 "b7e4a9d2669c46335f50ff5cdf36b9e05b3b5bc79ab130478ec5f841634b8aed" # TODO: Update Checksum
+      url "https://github.com/Jonathan1324/lct/releases/download/#{version}/lct-linux-arm64.tar.gz"
+      sha256 "541c51224b63c997cc41b2e7a7a6951451f7373e82601240a557ef1431ec3e23"
     else
-      url "https://github.com/Jonathan1324/lct/releases/download/v#{version}/lct-linux-x86_64.tar.gz"
-      sha256 "14866965cca15ca2fe1c60aea8969dcfcaa116100abf2a7bdeca5222e6fb10a1" # TODO: Update Checksum
+      url "https://github.com/Jonathan1324/lct/releases/download/#{version}/lct-linux-x86_64.tar.gz"
+      sha256 "eb0e2e9039024f732ec4651c1232939e25486223c9fa7c75a24ad8c641e1fb11"
     end
   end
 
