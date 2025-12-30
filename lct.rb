@@ -13,7 +13,7 @@ class Lct < Formula
   depends_on "python@3.12" => :build
 
   def install
-    system "cargo", "install", "license"
+    system "cargo", "install", "cargo-license"
 
     system "python3", "-m", "ci.ci", "--no-test"
 
